@@ -19,7 +19,8 @@ namespace ATM
 
             string pin = RequestPIN();
             Console.WriteLine();
-            Console.WriteLine("Your pin is " + pin);
+            Console.WriteLine("Welcome to Trojan Bank, press enter to continue");
+
             Console.ReadKey();
         }
 
