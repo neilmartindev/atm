@@ -21,6 +21,8 @@ namespace ATM
             Console.WriteLine();
             Console.WriteLine("Welcome to Trojan Bank, press enter to continue");
 
+
+
             Console.ReadKey();
         }
 
@@ -42,6 +44,26 @@ namespace ATM
             {
                 return sb.ToString();
             }
+
+        }
+
+        static void MainMenu()
+        {
+
+        }
+
+        static void Deposit()
+        {
+
+        }
+
+        static void Balance()
+        {
+
+        }
+
+        static void Withdraw()
+        {
 
         }
 
