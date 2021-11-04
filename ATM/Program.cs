@@ -142,6 +142,8 @@ namespace ATM
             Console.WriteLine("");
             Console.WriteLine("Withdrawals");
             Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("Enter the amount you'd like to withdraw");
 
             string withdrawal;
             withdrawal = Console.ReadLine();
