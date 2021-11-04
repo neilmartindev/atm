@@ -95,6 +95,7 @@ namespace ATM
         static void Deposit()
         {
             // sets the name of the console
+            decimal balance = 1800;
             Console.Title = "Trojan Bank Terminal";
 
             // sets the colour of the text
@@ -107,11 +108,13 @@ namespace ATM
 
             string deposit;
             deposit = Console.ReadLine();
+
+            Console.WriteLine("Successfull deposit of £" + deposit);
         }
 
         static void Balance()
         {
-            decimal balance = 0;
+            string balance = "£1800";
 
             // sets the name of the console
             Console.Title = "Trojan Bank Terminal";
@@ -123,8 +126,8 @@ namespace ATM
             Console.WriteLine("");
             Console.WriteLine("Current Balance");
             Console.WriteLine("");
-            Console.WriteLine("Your current balance is" + balance);
-
+            Console.WriteLine("Your current balance is: " + balance);
+            Console.WriteLine("");
         }
 
         static void Withdraw()
@@ -139,11 +142,16 @@ namespace ATM
             Console.WriteLine("");
             Console.WriteLine("Withdrawals");
             Console.WriteLine("");
+
+            string withdrawal;
+            withdrawal = Console.ReadLine();
+
+            Console.WriteLine("Successfull withdrawal of £" + withdrawal);
         }
 
         static void Exit()
         {
-
+            Environment.Exit(0);
         }
 
     }
