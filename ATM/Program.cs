@@ -67,6 +67,29 @@ namespace ATM
 
             string choice;
             choice = Console.ReadLine();
+
+            switch (choice)
+            {
+                case "1":
+                    Console.Clear();
+                    Deposit();
+                    break;
+                case "2":
+                    Console.Clear();
+                    Withdraw();
+                    break;
+                case "3":
+                    Console.Clear();
+                    Balance();
+                    break;
+                case "4":
+                    Console.Clear();
+                    Exit();
+                    break;
+            }
+
+
+
         }
 
         static void Deposit()
@@ -78,14 +101,18 @@ namespace ATM
             Console.ForegroundColor = ConsoleColor.Yellow;
             Console.BackgroundColor = ConsoleColor.DarkRed;
 
-            Console.WriteLine("");
             Console.WriteLine("Deposits");
             Console.WriteLine("");
+            Console.WriteLine("Please enter the amount you wish to deposit(£): ");
 
+            string deposit;
+            deposit = Console.ReadLine();
         }
 
         static void Balance()
         {
+            decimal balance = 0;
+
             // sets the name of the console
             Console.Title = "Trojan Bank Terminal";
 
@@ -96,6 +123,7 @@ namespace ATM
             Console.WriteLine("");
             Console.WriteLine("Current Balance");
             Console.WriteLine("");
+            Console.WriteLine("Your current balance is" + balance);
 
         }
 
